@@ -1,30 +1,47 @@
 # Sputnik Clock — виджет для [Übersicht](https://github.com/felixhageloh/uebersicht)
 
-Настольные часы в стиле «Спутник» (24-часовой циферблат, золотая минутная и бордовая часовая стрелки, секундная на внешнем круге). Обновление ~120 Hz.
+Настольные часы в стиле «Спутник»: 24-часовой циферблат, золотая минутная и бордовая часовая стрелки, секундная на внешнем круге. Обновление ~120 Hz.
+
+Репозиторий оформлен по [формату галереи виджетов](https://github.com/felixhageloh/uebersicht-widgets#widget-format): в корне лежат `widget.json`, `sputnik.widget.zip`, `screenshot.png` (516×320 для Retina), а также распакованная копия в каталоге `sputnik.widget/` для просмотра кода и pull request’ов.
 
 ## Требования
 
 - macOS  
-- [Übersicht](https://github.com/felixhageloh/uebersicht) установлен и запущен
+- [Übersicht](https://github.com/felixhageloh/uebersicht)
 
 ## Установка
 
-1. Склонируйте репозиторий (или скачайте `sputnik.jsx`).
+**Вариант A — архив (как в галерее):** распакуйте `sputnik.widget.zip`, получится папка `sputnik.widget`. Переместите её в каталог виджетов:
 
-2. Скопируйте `sputnik.jsx` в каталог виджетов Übersicht:
+```bash
+# при необходимости удалите суффикс .widget из имени папки — Übersicht ожидает папку *.widget
+open ~/Library/Application\ Support/Übersicht/widgets/
+```
 
-   ```bash
-   cp sputnik.jsx ~/Library/Application\ Support/Übersicht/widgets/
-   ```
+Перетащите туда папку `sputnik.widget` (Übersicht подхватывает `.jsx` внутри).
 
-   Либо сделайте симлинк, чтобы правки в клоне сразу подхватывались:
+**Вариант B — один файл:** скопируйте `sputnik.jsx` (в корне или из `sputnik.widget/`) в:
 
-   ```bash
-   ln -sf "$(pwd)/sputnik.jsx" ~/Library/Application\ Support/Übersicht/widgets/sputnik.jsx
-   ```
+```bash
+cp sputnik.jsx ~/Library/Application\ Support/Übersicht/widgets/
+```
 
-3. В меню Übersicht обновите виджеты или перезапустите приложение.
+Обновите виджеты в меню Übersicht или перезапустите приложение.
 
 ## Позиция на экране
 
-Координаты задаются в `className` в начале `sputnik.jsx` (`bottom`, `right`, размеры). Подстройте под свой монитор.
+В начале `sputnik.jsx` в `className` заданы `bottom`, `right` и размеры — подстройте под свой монитор.
+
+## В галерею
+
+Чтобы виджет попал в [каталог](https://github.com/felixhageloh/uebersicht-widgets), после публикации репозитория [создайте issue](https://github.com/felixhageloh/uebersicht-widgets/issues) и укажите URL репозитория.
+
+## Обновление артефактов галереи
+
+После правок в `sputnik.jsx`:
+
+```bash
+cp sputnik.jsx sputnik.widget/
+zip -r sputnik.widget.zip sputnik.widget
+# при необходимости обновите screenshot.png (258×160 или 516×320)
+```
