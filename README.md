@@ -14,7 +14,7 @@ This repo follows the [widget gallery layout](https://github.com/felixhageloh/ue
 ## Installation
 
 **Option A — archive (gallery format):** unzip `sputnik.widget.zip` to get the `sputnik.widget` folder, then add it to your widgets directory:
-
+ 
 ```bash
 open ~/Library/Application\ Support/Übersicht/widgets/
 ```
