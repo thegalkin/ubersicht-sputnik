@@ -164,7 +164,7 @@ export const render = () => {
       <text x={CX} y={spY + 44} fill="#1a1a1a" fontSize="8" fontWeight="600"
         textAnchor="middle" dominantBaseline="central" fontFamily="Arial Narrow, Arial, sans-serif" letterSpacing="1">1957</text>
       <text x={CX} y={spY + 34} fill="#1a1a1a" fontSize="7" fontWeight="700"
-        textAnchor="middle" dominantBaseline="central" fontFamily="Arial, sans-serif" letterSpacing="1.5">SPUTNIK</text>
+        textAnchor="middle" dominantBaseline="central" fontFamily="Arial, sans-serif" letterSpacing="1.5">СПУТНИК</text>
 
       {ticks}
 
