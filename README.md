@@ -1,47 +1,48 @@
-# Sputnik Clock — виджет для [Übersicht](https://github.com/felixhageloh/uebersicht)
+# Sputnik Clock — [Übersicht](https://github.com/felixhageloh/uebersicht) widget
 
-Настольные часы в стиле «Спутник»: 24-часовой циферблат, золотая минутная и бордовая часовая стрелки, секундная на внешнем круге. Обновление ~120 Hz.
+![Sputnik Clock widget preview](screenshot.png)
 
-Репозиторий оформлен по [формату галереи виджетов](https://github.com/felixhageloh/uebersicht-widgets#widget-format): в корне лежат `widget.json`, `sputnik.widget.zip`, `screenshot.png` (516×320 для Retina), а также распакованная копия в каталоге `sputnik.widget/` для просмотра кода и pull request’ов.
+A desktop clock inspired by Sputnik-era styling: 24-hour dial, gold minute and burgundy hour hands, second hand on the outer ring. Refreshes at ~120 Hz.
 
-## Требования
+This repo follows the [widget gallery layout](https://github.com/felixhageloh/uebersicht-widgets#widget-format): `widget.json`, `sputnik.widget.zip`, `screenshot.png` (516×320 for Retina), plus an unpacked copy in `sputnik.widget/` for browsing the source and sending pull requests.
+
+## Requirements
 
 - macOS  
 - [Übersicht](https://github.com/felixhageloh/uebersicht)
 
-## Установка
+## Installation
 
-**Вариант A — архив (как в галерее):** распакуйте `sputnik.widget.zip`, получится папка `sputnik.widget`. Переместите её в каталог виджетов:
+**Option A — archive (gallery format):** unzip `sputnik.widget.zip` to get the `sputnik.widget` folder, then add it to your widgets directory:
 
 ```bash
-# при необходимости удалите суффикс .widget из имени папки — Übersicht ожидает папку *.widget
 open ~/Library/Application\ Support/Übersicht/widgets/
 ```
 
-Перетащите туда папку `sputnik.widget` (Übersicht подхватывает `.jsx` внутри).
+Drag the `sputnik.widget` folder there (Übersicht will pick up the `.jsx` inside).
 
-**Вариант B — один файл:** скопируйте `sputnik.jsx` (в корне или из `sputnik.widget/`) в:
+**Option B — single file:** copy `sputnik.jsx` (from the repo root or from `sputnik.widget/`) into:
 
 ```bash
 cp sputnik.jsx ~/Library/Application\ Support/Übersicht/widgets/
 ```
 
-Обновите виджеты в меню Übersicht или перезапустите приложение.
+Refresh widgets from the Übersicht menu or restart the app.
 
-## Позиция на экране
+## On-screen position
 
-В начале `sputnik.jsx` в `className` заданы `bottom`, `right` и размеры — подстройте под свой монитор.
+At the top of `sputnik.jsx`, `className` sets `bottom`, `right`, and dimensions — adjust for your display.
 
-## В галерею
+## Widget gallery
 
-Чтобы виджет попал в [каталог](https://github.com/felixhageloh/uebersicht-widgets), после публикации репозитория [создайте issue](https://github.com/felixhageloh/uebersicht-widgets/issues) и укажите URL репозитория.
+To list this widget in the [gallery](https://github.com/felixhageloh/uebersicht-widgets), [open an issue](https://github.com/felixhageloh/uebersicht-widgets/issues) and include your repository URL.
 
-## Обновление артефактов галереи
+## Updating gallery artifacts
 
-После правок в `sputnik.jsx`:
+After editing `sputnik.jsx`:
 
 ```bash
 cp sputnik.jsx sputnik.widget/
 zip -r sputnik.widget.zip sputnik.widget
-# при необходимости обновите screenshot.png (258×160 или 516×320)
+# update screenshot.png if needed (258×160 or 516×320 per gallery guidelines)
 ```

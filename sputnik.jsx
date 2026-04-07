@@ -1,5 +1,4 @@
-// Sputnik clock for Übersicht
-// Übersicht renders widgets with React/JSX [web:52].
+// Sputnik clock for Übersicht (React/JSX).
 
 // 120 Hz
 export const refreshFrequency = 1000 / 120
@@ -165,7 +164,7 @@ export const render = () => {
       <text x={CX} y={spY + 44} fill="#1a1a1a" fontSize="8" fontWeight="600"
         textAnchor="middle" dominantBaseline="central" fontFamily="Arial Narrow, Arial, sans-serif" letterSpacing="1">1957</text>
       <text x={CX} y={spY + 34} fill="#1a1a1a" fontSize="7" fontWeight="700"
-        textAnchor="middle" dominantBaseline="central" fontFamily="Arial, sans-serif" letterSpacing="1.5">СПУТНИК</text>
+        textAnchor="middle" dominantBaseline="central" fontFamily="Arial, sans-serif" letterSpacing="1.5">SPUTNIK</text>
 
       {ticks}
 
