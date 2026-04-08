@@ -2,7 +2,7 @@
 
 ![Sputnik Clock widget preview](screenshot.png)
 
-A desktop clock inspired by Sputnik-era styling: 24-hour dial, gold minute and burgundy hour hands, second hand on the outer ring. Refreshes at ~120 Hz.
+A desktop clock inspired by Sputnik-era styling: 24-hour dial, gold minute and burgundy hour hands, second hand on the outer ring. Refreshes at ~24 Hz.
 
 This repo follows the [widget gallery layout](https://github.com/felixhageloh/uebersicht-widgets#widget-format): `widget.json`, `sputnik.widget.zip`, `screenshot.png` (516×320 for Retina), plus an unpacked copy in `sputnik.widget/` for browsing the source and sending pull requests.
 
