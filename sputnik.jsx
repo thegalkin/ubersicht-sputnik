@@ -1,7 +1,7 @@
 // Sputnik clock for Übersicht (React/JSX).
 
-// 120 Hz
-export const refreshFrequency = 1000 / 120
+
+export const refreshFrequency = 1000 / 24
 export const label = "Sputnik Clock"
 export const icon = "🛰️"
 export const command = "date +%s"
